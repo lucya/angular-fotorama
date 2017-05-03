@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html ng-app="myApp">
+<head>
+    <title>AngularJS Dynamic Template</title>
+
+    <script type="text/javascript" src="vendor/jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/angular.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+    <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+
+</head>
+<body ng-controller="MainCtrl">
+
+    <div>
+        <button ng-click="show()">show</button>
+        <button ng-click="show2()">show2</button>
+    </div>
+    <div>
+        <div>API</div>
+        <div><a href="http://fotorama.io/customize/options/">fotoroma API</a></div>
+    </div>
+    <div id="container" style="z-index: 9999;position: absolute;top: 30px;left: -40px;">
+        <div class="fotorama">
+          <!--<img src="http://s.fotorama.io/1.jpg">
+          <img src="http://s.fotorama.io/2.jpg">-->
+        </div>
+    </div>
+
+</body>
+</html>
